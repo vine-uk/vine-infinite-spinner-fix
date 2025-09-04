@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Vine Infinite Spinner Fix",
   "description": "Fixes the infinite spinner bug on Amazon Vine.",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "action": {
     "default_title": "Vine Infinite Spinner Fix",
     "default_icon": "icon-48.png"
@@ -15,7 +15,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["fix.js", "spinner.png"],
+      "resources": ["fix.js"],
       "matches": [
         "*://*.amazon.co.uk/*",
         "*://*.amazon.es/*",
@@ -23,6 +23,8 @@
         "*://*.amazon.de/*",
         "*://*.amazon.fr/*",
         "*://*.amazon.ca/*",
+        "*://*.amazon.it/*",
+        "*://*.amazon.com.au/*",
         "*://*.amazon.com/*"
       ]
     }
@@ -37,7 +39,9 @@
         "*://*.amazon.co.jp/vine/*",
         "*://*.amazon.de/vine/*",
         "*://*.amazon.fr/vine/*",
-        "*://*.amazon.es/vine/*"
+        "*://*.amazon.es/vine/*",
+        "*://*.amazon.it/vine/*",
+        "*://*.amazon.com.au/vine/*"
       ],
       "js": ["contentScript.js"],
       "css": ["styles.css"],
